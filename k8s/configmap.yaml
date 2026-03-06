@@ -1,0 +1,10 @@
+apiVersion: v1
+
+kind: ConfigMap
+metadata:
+  name: progettotest
+data:
+  message: "Hello from ConfigMap!"
+  ENVIRONMENT: "development"
+  LOG_LEVEL: "debug"
+  APP_NAME: "DevOps Capstone API - L2"

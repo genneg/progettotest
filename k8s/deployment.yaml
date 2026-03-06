@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: progettotest
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: progettotest
+  template:
+    metadata:
+      labels:
+        app: progettotest
+    spec:
+      containers:
+      - name: progettotest
+        image: progettotest:v1
+        ports:
+        - containerPort: 8000
